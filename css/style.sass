@@ -1,0 +1,411 @@
+$violet: #990066
+$pink: #e90049
+$white: #fff
+$black: #000
+
+// reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+// common styles
+
+img
+  width: 100%
+  height: auto
+.nob-hidden, .nob-hidden-img
+  display: none
+.nob-container ::-moz-selection
+  background: $violet
+  color: $white
+.nob-container ::selection
+  background: $violet
+  color: $white
+
+.nob-container
+  width: 1100px
+  height: 100%
+  background-color: $white
+  margin: 0 auto
+  overflow: hidden
+  > div
+    position: relative
+
+.nob-white
+  display: block
+  background-color: $white
+  position: absolute
+  width: 530px
+  height: 125px
+  top: 156px
+
+.nob-flex
+  display: flex
+
+.nob-flex-rev
+  flex-direction: row-reverse
+
+.nob-block-violet
+  background: $violet
+  min-height: 100px
+  font-family: "rob-light"
+  color: $white
+  box-sizing: border-box
+
+.nob-mark-pink
+  font-size: 1em
+  font-family: "rob-bold"
+  color: $pink
+  text-transform: uppercase
+
+.nob-mark-violet
+  font-size: 1em
+  font-family: "rob-bold"
+  color: $violet
+  text-transform: uppercase
+
+.nob-mark-white
+  font-size: 1em
+  font-family: "rob-bold"
+  color: $white
+  text-transform: uppercase
+
+.nob-block
+  &__text
+    font-size: 22px
+    font-family: "rob-light"
+    line-height: 1.18
+    box-sizing: border-box
+  &__img
+    position: relative
+    img
+      position: relative
+      z-index: 999
+
+.nob-flag
+  width: 90px
+  height: 80px
+  position: absolute
+  z-index: 0
+  background-size: contain !important
+
+.nob-intro
+  overflow: hidden
+  box-sizing: border-box
+  padding: 20px 50px
+  padding-bottom: 55px
+  &__content
+    flex-direction: column
+  &__img
+    width: 100%
+  .nob-text
+    width: 270px
+    height: auto
+    position: relative
+  .nob-sub-title
+    color: $black
+    font-size: 30px
+  .nob-sub-title:first-child
+    font-family: "rob-bold"
+    margin-top: 55px
+    text-transform: uppercase
+  .nob-sub-title:last-child
+    font-family: "rob-light"
+    text-align: right
+    margin-right: 15px
+  .nob-title
+    font-size: 76px
+    font-family: "rob-bold"
+    color: $black
+    text-transform: uppercase
+    margin-top: 65px
+    position: relative
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-bottom: 1px solid $black
+      width: 100%
+      right: 0
+    &::before
+      top: -15px
+    &::after
+      bottom: -140px
+  .nob-title-violet
+    font-size: 125px
+    font-family: "rob-light"
+    color: $violet
+    text-transform: uppercase
+    white-space: nowrap
+    line-height: 1
+    background-color: $white
+    padding-right: 260px
+    width: 100%
+    position: relative
+    z-index: 999
+
+
+
+.nob-block-violet1
+  padding: 45px 145px
+  font-size: 35px
+  line-height: 1.1
+
+.nob-block2, .nob-block3, .nob-block5, .nob-block6
+  .nob-block__text
+    color: $black
+
+.nob-block2
+  padding: 20px 60px 30px
+  &__img
+    width: 322px
+  &__text
+    width: 600px
+    padding: 100px 40px
+  .nob-flag
+    background: url("../img/flag1.png") no-repeat
+    bottom: -27px
+    left: 106px
+
+.nob-block3
+  margin-top: -130px
+  margin-bottom: 10px
+  padding: 0 90px
+  &__img
+    width: 190px
+  &__text
+    width: 530px
+    padding: 75px 15px
+    text-align: right
+  .nob-flag
+    background: url("../img/flag2.png") no-repeat
+    bottom: 0px
+    right: 50px
+
+.nob-block4
+  background: $pink
+  margin: 0 50px
+  height: 173px
+  &__img
+    img
+      width: 290px
+      top: -112px
+      left: 20px
+  &__text
+    padding: 30px 45px
+    color: $white
+    font-family: "rob-light"
+  .nob-flag
+    background: url("../img/flag3.png") no-repeat
+    bottom: -80px
+    left: 65px
+
+.nob-block5
+  padding: 35px 80px 30px
+  &__img
+    width: 345px
+  &__text
+    width: 660px
+    padding: 65px 60px 0px 0
+    text-align: right
+    p
+      padding-top: 30px
+  .nob-flag
+    background: url("../img/flag1.png") no-repeat
+    bottom: -55px
+    left: 120px
+.nob-block6
+  padding: 0 50px
+  margin-top: -40px
+  &__img
+    width: 190px
+  &__text
+    width: 745px
+    padding: 88px 25px
+  .nob-flag
+    background: url("../img/flag5.png") no-repeat
+    bottom: -4px
+    left: 50px
+.nob-block-container
+  padding: 90px 75px
+  justify-content: space-between
+  background: url('../img/photo-spider.png') no-repeat
+  background-size: 405px
+  background-position: 42% 5px
+  margin-top: -70px
+.nob-block7, .nob-block8
+  width: 360px
+  border: 1px solid $pink
+  border-radius: 20px
+  padding: 15px
+  align-items: center
+  background: rgba($white, 0.8)
+  position: relative
+  &__text
+    text-align: center
+    position: relative
+    z-index: 999
+  .nob-flag
+    bottom: -80px
+    left: 35px
+.nob-block7
+  .nob-flag
+    background: url("../img/flag3.png") no-repeat
+.nob-block8
+  .nob-flag
+    background: url("../img/flag6.png") no-repeat
+
+.nob-block9
+  padding: 0px 30px
+  &__text
+    padding: 0 190px
+    text-align: center
+  .nob-word
+    width: 140px
+    max-width: 140px
+    background: $violet
+    color: $white
+    font-family: "rob-bold"
+    text-align: center
+    text-transform: uppercase
+    font-size: 22px
+    white-space: nowrap
+    padding: 15px 0px
+    margin: 0 10px
+    box-sizing: border-box
+    cursor: pointer
+    &:hover
+      background: $pink
+      span:first-child
+        display: none
+      .nob-hidden
+        display: inline-block
+  .nob-word.hover-effect
+    background: $pink
+    span:first-child
+      display: none
+    .nob-hidden
+      display: inline-block
+
+  .nob-word:nth-child(1)
+    width: 160px
+    max-width: 160px
+  .nob-word:nth-child(4)
+    width: 200px
+    max-width: 200px
+    position: relative
+    z-index: 999
+  .nob-word:nth-child(5)
+    width: 300px
+    max-width: 300px
+.nob-words
+  padding: 45px 0
+  position: relative
+  .nob-flag
+    background: url("../img/flag7.png") no-repeat
+    bottom: -35px
+    right: 385px
+
+.nob-block10
+  background: $violet
+  color: $white
+  height: 200px
+  margin-top: 40px
+  img
+    width: 238px
+    top: -46px
+  &__img:last-child
+    img
+      right: 20px
+  &__img:first-child
+    img
+      left: 20px
+  &__text
+    padding: 20px 35px
+    text-align: center
+  .nob-flag
+    background: url("../img/flag2.png") no-repeat
+    bottom: -72px
+    left: 108px
+
+.nob-block11
+  flex-direction: column
+  width: 635px
+  padding: 40px 0px
+  margin: 0 auto
+  &__img
+    padding: 0 20px
+    img
+      max-width: 100%
+      width: 165px
+      height: 164px
+    img:nth-child(2)
+      margin: 0 50px
+  &__text
+    padding: 60px 0px 10px
+    text-align: center
+  .nob-flag
+    background: url("../img/flag8.png") no-repeat
+    bottom: -45px
+    left: 275px
+
+.nob-block12
+  &__content
+    background: $pink
+    margin: 0 50px
+    color: $white
+    position: relative
+    z-index: 999
+  &__text
+    padding: 30px 70px
+    text-align: center
+
+.nob-flags
+  margin: 0 50px
+  width: 1000px
+  position: absolute
+  bottom: -55px
+  left: 0
+  z-index: 0
+  justify-content: center
+  img
+    width: 90px
+    height: 110px
+    margin: 0 10px
+
+.nob-block13
+  padding: 125px 50px
+  &__img
+    position: absolute
+    top: 68px
+    left: 38px
+  &__content
+    border: 1px solid $pink
+    border-radius: 20px
+    padding: 50px
+  &__text
+  h2
+    font-size: 32px
+  p:nth-child(3)
+    padding: 30px 0
+  .nob-shape
+    width: 220px
+    height: 150px
+    float: left
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)
+
+
+
+
+
+
+
+
+
+
+@import "media"
